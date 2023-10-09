@@ -23,8 +23,10 @@ public class MainES2 {
                 System.out.println(result + "km/l");
             } catch (ArithmeticException ex) {
                 log.error("FAI RIFORNIMENTO!!");
+            } finally {
+                sc.close();
             }
-            ;
+            
         }
     }
 }

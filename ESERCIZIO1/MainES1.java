@@ -8,8 +8,6 @@ import java.util.Scanner;
 public class MainES1 {
     static Logger log = LoggerFactory.getLogger(MainES1.class);
 
-    ;
-
     public static void main(String[] args) {
         esercizio1();
     }
@@ -43,7 +41,12 @@ public class MainES1 {
                 log.error("INSERISCI SOLO NUMERI!!");
             } catch (ArrayIndexOutOfBoundsException ex) {
                 log.error("solo posizioni da 1 a 5!!");
+            } finally {
+                sc.close();
             }
+
         }
+
     }
+
 }
